@@ -39,10 +39,6 @@
 
   To learn more about this license, visit (https://choosealicense.com/licenses/mit/)
 
-  ## Contributing
-
-  
-
   ## Testing
 
   Run the following command to test this project:
