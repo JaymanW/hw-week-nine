@@ -2,13 +2,13 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === `MIT`) {
-    return `!(https://img.shields.io/badge/License-mit-purple.svg)`;
+    return `![License Badge](https://img.shields.io/badge/License-mit-purple.svg)`;
   } else if (license === `Apache 2.0`) {
-    return `!(https://img.shields.io/badge/License-apache2.0-purple.svg)`;
+    return `![License Badge](https://img.shields.io/badge/License-apache2.0-purple.svg)`;
   } else if (license === `GNU GPL 3.0`) {
-    return `!(https://img.shields.io/badge/License-gpl3.0-purple.svg)`;
+    return `![License Badge](https://img.shields.io/badge/License-gpl3.0-purple.svg)`;
   } else if (license === `Unlicense`) {
-    return `!(https://img.shields.io/badge/License-unlicense.0-purple.svg)`;
+    return `![License Badge](https://img.shields.io/badge/License-unlicense.0-purple.svg)`;
   } else {
     return "";
   }
@@ -52,10 +52,15 @@ function generateMarkdown(data) {
   ## Table of Contents
 
   [Installation](#installation)
+
   [Usage](#usage)
+
   [License](#license)
+
   [Contributing](#contributing)
-  [Tests](#tests)
+
+  [Tests](#testing)
+  
   [Questions/Contact](#questions)
 
   ## Installation
@@ -90,11 +95,13 @@ function generateMarkdown(data) {
   ${data.test}
   ~~~
 
-  ## Questions / Contact
+  ## Questions
 
   If you have any questions, comments, or concerns about this project, you can reach me at the following links:
+  
   Email: ${data.email}
-  GitHub[${data.githubUser}(https://github.com/${data.githubUser})];
+  
+  GitHub: [${data.githubUser}](https://github.com/${data.githubUser})
   `;
 }
 
