@@ -43,7 +43,7 @@ const questions = [
     {
         type: `input`,
         name: `contributing`,
-        message: `List the GitHub usernames of any collaborators on this project.`
+        message: `Give credit and list the GitHub usernames of any project contributors.`
     },
     {
         type: `input`,
